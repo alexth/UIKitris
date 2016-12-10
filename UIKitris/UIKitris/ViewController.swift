@@ -46,7 +46,7 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func didPress(downStopButton: UIButton) {
+    @IBAction func didPress(downButton: UIButton) {
 
     }
 
