@@ -16,6 +16,7 @@
 		E55C2A1F1DF9432A00969D61 /* UIKitrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C2A1E1DF9432A00969D61 /* UIKitrisUITests.swift */; };
 		E5A401C61DFC76DB004A7D40 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A401C51DFC76DB004A7D40 /* Matrix.swift */; };
 		E5A401C81DFC7C20004A7D40 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A401C71DFC7C20004A7D40 /* Shape.swift */; };
+		E5A401CB1DFC9017004A7D40 /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A401CA1DFC9017004A7D40 /* LShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E55C2A201DF9432A00969D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5A401C51DFC76DB004A7D40 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
 		E5A401C71DFC7C20004A7D40 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		E5A401CA1DFC9017004A7D40 /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +103,14 @@
 		E55C29FD1DF9432A00969D61 /* UIKitris */ = {
 			isa = PBXGroup;
 			children = (
+				E55C2A051DF9432A00969D61 /* Assets.xcassets */,
 				E55C29FE1DF9432A00969D61 /* AppDelegate.swift */,
-				E55C2A001DF9432A00969D61 /* ViewController.swift */,
+				E55C2A071DF9432A00969D61 /* LaunchScreen.storyboard */,
+				E55C2A021DF9432A00969D61 /* Main.storyboard */,
 				E5A401C51DFC76DB004A7D40 /* Matrix.swift */,
 				E5A401C71DFC7C20004A7D40 /* Shape.swift */,
-				E55C2A021DF9432A00969D61 /* Main.storyboard */,
-				E55C2A051DF9432A00969D61 /* Assets.xcassets */,
-				E55C2A071DF9432A00969D61 /* LaunchScreen.storyboard */,
+				E55C2A001DF9432A00969D61 /* ViewController.swift */,
+				E5A401C91DFC8FD1004A7D40 /* Shapes */,
 				E55C2A0A1DF9432A00969D61 /* Info.plist */,
 			);
 			path = UIKitris;
@@ -129,6 +132,14 @@
 				E55C2A201DF9432A00969D61 /* Info.plist */,
 			);
 			path = UIKitrisUITests;
+			sourceTree = "<group>";
+		};
+		E5A401C91DFC8FD1004A7D40 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				E5A401CA1DFC9017004A7D40 /* LShape.swift */,
+			);
+			path = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5A401CB1DFC9017004A7D40 /* LShape.swift in Sources */,
 				E55C2A011DF9432A00969D61 /* ViewController.swift in Sources */,
 				E55C29FF1DF9432A00969D61 /* AppDelegate.swift in Sources */,
 				E5A401C61DFC76DB004A7D40 /* Matrix.swift in Sources */,

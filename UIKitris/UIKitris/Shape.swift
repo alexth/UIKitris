@@ -8,14 +8,22 @@
 
 import Foundation
 
-class Shape: Matrix {
-    var orientation: Orientation!
+public enum Orientation: String {
+    case Zero = "Zero"
+    case Ninety = "Ninety"
+    case OneEighty = "OneEighty"
+    case TwoSeventy = "TwoSeventy"
+}
 
-    public typealias BlockPosition = (row: Int, column: Int)
-    var blockRowsColumnsPositions: BlockPosition! // for overriding
+class Shape: Matrix {
+    var orientation: Orientation
+
+    public typealias BlocksPosition = [(Int, Int)]
+//    var blocksRowsColumnsPositions: BlocksPosition! // for overriding
 
     init(row: Int, column: Int, orientation: Orientation) {
-        super.init(row: row, column: column)
         self.orientation = orientation
+//        self.blocksRowsColumnsPositions = [(0, 0)]
+        super.init(row: row, column: column)
     }
 }
