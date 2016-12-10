@@ -8,7 +8,14 @@
 
 import Foundation
 
-struct Matrix {
+enum Orientation: String {
+    case Zero = "Zero"
+    case Ninety = "Ninety"
+    case OneEighty = "OneEighty"
+    case TwoSeventy = "TwoSeventy"
+}
+
+class Matrix {
     var row: Int
     var column: Int
 
